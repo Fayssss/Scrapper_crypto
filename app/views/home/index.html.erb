@@ -1,0 +1,24 @@
+<div class="container-fluid align-items-stretch bg-secondary">
+<div class= "text-light  d-flex align-content-end flex-wrap ">
+<div class="center jumbotron bg-secondary">  
+
+<h1>Salut, quel cours de cryptomonnaie souhaites-tu ?</h1>
+
+<% if @money %>
+  <p> La monnaie <%=@money.name%> a pour prix <%=@money.price%></p>
+  <br/>
+  <%= link_to "Retour au choix de la monnaie", '/', method: :get%>
+  <% elsif !flash.empty? %>
+    <p id="error"><%= flash[:error] %></p>
+    <%= link_to "Retour au choix de la monnaie", '/', method: :get%>
+  <% else %>
+  <p>Entre la monnaie ci-dessous :</p>
+  <%= form_for :money, url: "home#index", method: :get do |f| %>
+    <%= f.text_field :name %>
+    <%= f.submit "Confirme ici!" %>
+  <% end  %>
+<% end  %>
+
+</div>
+</div>
+</div>

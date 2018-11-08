@@ -1,26 +1,28 @@
-# README
+ 
+  # S6J4_Scrapper_crypto
+ :smiley: :smiley: :smiley: :smiley: :smiley:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+  ## Movie Searcher
 
-Things you may want to cover:
 
-* Ruby version
+Un site qui demande sur la page d'accueil de rentrer un nom de film en recherche. La recherche renvoie un ou plusieurs films et doit afficher les 20 premiers en mentionnant : • le nom du film • la date de sortie • le réalisateur • une image s'il y en a une
+Lien Heroku :
 
-* System dependencies
 
-* Configuration
+Localement :
 
-* Database creation
+    Lancer $ git clone "Github"
+    Lancer $ bundle install
+    Lancer $ rails db:create
+    Lancer $ rails db:migrate
+    Lancer $ rails server
+    Se rendre sur localhost:3000 via votre navigateur
 
-* Database initialization
+Team :
 
-* How to run the test suite
+@fays
+@hai-dang
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # S6J4_Scrapper_crypto
 # Scrapper_crypto
+:smiley: :smiley: :smiley: :smiley: :smiley: :smiley: :smiley: :smiley: :smiley:
